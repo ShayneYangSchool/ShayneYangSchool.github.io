@@ -8,7 +8,7 @@ body{
   font-family: 'Poppins', sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  background: var(--primary-color);
+  background: var(--dark-color);
 }
 
 :root{
@@ -66,28 +66,35 @@ img {
   max-width: 1920;
   margin: 0 auto;
   padding: 0 100px;
-  border: 2px solid red;
+}
+
+.container-text{
+  max-width: 80%;
+  margin: 20px auto;
+  padding: 1em;
+  gap: 20px,20px;
 }
 
 .container-sm {
   display: flex;
   max-width: 80%;
-  margin: 20px auto;
+  margin: 50px auto;
   height: 700px;
-  border: 2px solid red;
   align-items: flex-start;
-  gap: 20px;
+  gap: 40px;
 }
 
 .item{
   width: 150px;
   height: 150px;
-  background-color: #FFFFFF;
+  background-color: var(--primary-color);
   padding: 1em;
-  border: 10px solid violet;
+  border: 10px solid var(--secondary-color);
   border-radius: 10px;
   align-items: center;
   justify-content: center;
+  color: var(--tertiary-color);
+  gap: 50px;
 }
 .item-1 {
   display: flex;
@@ -100,9 +107,20 @@ img {
   align-items: center;
   justify-content: center;
 }
-
 .item-2{
   flex-grow: 1;
   flex-shrink: 10;
   height: 100%;
+}
+.item-3{
+  width: auto;
+  height: auto;
+  align-items: center;
+  justify-items: center;
+  gap: 50px;
+}
+.item-4{
+  width: auto;
+  height: auto;
+  gap: 1em 1em;
 }

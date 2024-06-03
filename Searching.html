@@ -41,7 +41,41 @@
             </div>
         </nav>
 
-        <p> Super idol </p>
-        <a href="index.html"> I have no dreams </a>
+        <section>
+            <div class="container-text">
+                <div class="item item-4">
+                    <h1 style="font-size: 50px; color: aliceblue; font-family: 'Courier New', Courier, monospace;">
+                        Searching
+                    </h1>
+                    <h2 style="font-size: 40px; color: aliceblue; font-family: 'Courier New', Courier, monospace;">
+                        Intro to searching
+                    </h2>
+                    <p style="font-size: 20px; color: aliceblue; font-family: 'Courier New', Courier, monospace;" >
+                        Sometimes programmers have to find an element within an array. To do that, they utilize searching algorithms, such as linear search or binary search. Each of these sorting algorithm has their own advantages and disadvantages and there are different use cases for each one.
+                    </p>
+                </div>
+                <div class="item item-4">
+                    <h2 style="font-size: 40px; color: aliceblue; font-family: 'Courier New', Courier, monospace;">
+                        Linear Search
+                    </h2>
+                    <img src="assets/linearSearch.png" alt="linearSearch" height="500px">
+
+                    <p style="font-size: 20px; color: aliceblue; font-family: 'Courier New', Courier, monospace;" >
+                        Linear search is one of the simplest, yet also the slowest, searching algorithm. It has a best case time complexity of O(1), assuming the first index is the element being searched for. However, it's worst case and average case time complexity is O(n). Linear search works by looping through the entire container, from one end to another, and checking each element to determine whether it is the right element being looked for. The advantage of this is that it is extremely simple to implement, thus making it friendly to beginner programmers. However, it is also one of the slower searching algorithms, making it very bad for large data sets. Below is an implementation for an integer array that returns the index.
+                    </p>    
+                </div>
+                <div class="item item-4">
+                    <h2 style="font-size: 40px; color: aliceblue; font-family: 'Courier New', Courier, monospace;">
+                        Binary Search
+                    </h2>
+                    <img src="assets/binarySearch.png" alt="binary" height="500px">
+
+                    <p style="font-size: 20px; color: aliceblue; font-family: 'Courier New', Courier, monospace;" >
+                        Another searching algorithm utilized by programmers is known as binary search. This sorting algorithm has a best case time of O(1) and an average and worst case time complexity of O(log n). Binary search works only on an already sorted array. The following explanation assumes that it is sorted from lowest to greatest. Binary search works by having two pointers that start out pointing to either ends of the array, the left and right pointer. It then checks the middle element between the two pointers. If the element is the target, we return the position. If the element is larger than the target, then we know that the target is left of the element. Thus, we would narrow down our pointers to be the left and the index of the middle - 1. On the other hand, if it was smaller, then we would narrow down our pointers to be the index of the middle + 1 and right. We would constantly do this until we found our target. If the right pointer, at any time, becomes smaller than the left pointer, then we must know that the target is not in the array. Binary search has the advantage that it is much faster than linear search. However, it also suffers from the drawback that the array must be sorted beforehand, or else it won't work. Below is an implementation for an integer array that returns the index.
+                    </p>    
+                </div>
+
+            </div>
+        </section>
     </body>
 </html>

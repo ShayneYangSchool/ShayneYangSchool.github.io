@@ -39,9 +39,52 @@
                 </div>
             </div>
         </nav>
+        <section>
+            <div class="container-text">
+                <div class="item item-4">
+                    <h1 style="font-size: 50px; color: aliceblue; font-family: 'Courier New', Courier, monospace;">
+                        Abstract Data Classes
+                    </h1>
+                    <h2 style="font-size: 40px; color: aliceblue; font-family: 'Courier New', Courier, monospace;">
+                        Intro to Abstract Data Classes
+                    </h2>
+                    <p style="font-size: 20px; color: aliceblue; font-family: 'Courier New', Courier, monospace;" >
+                        Abstract data classes in Java serve as a blueprint for other classes, providing a structured and reusable way to define common behaviors and properties while deferring implementation details to subclasses. These classes enable developers to establish a clear contract for what functionalities a particular group of classes should offer, enhancing code modularity, maintainability, and scalability. Concepts such as subclasses and polymorphism will be extended in its on subsection.
+                    </p>
+                </div>
+                <div class="item item-4">
+                    <h2 style="font-size: 40px; color: aliceblue; font-family: 'Courier New', Courier, monospace;">
+                        Partial Implementation
+                    </h2>
+                    <p style="font-size: 20px; color: aliceblue; font-family: 'Courier New', Courier, monospace;" >
+                        Abstract classes can have both abstract methods (without a body) and concrete methods (with a body). This allows them to provide a partial implementation that can be shared among multiple subclasses. For instance, an abstract class Shape can define common methods like calculateArea and calculatePerimeter but leave their implementations to specific shape subclasses like Circle and Rectangle.
+                    </p>
+                </div>
+                <div class="item item-4">
+                    <h2 style="font-size: 40px; color: aliceblue; font-family: 'Courier New', Courier, monospace;">
+                        Non-Instantiability
+                    </h2>
+                    <p style="font-size: 20px; color: aliceblue; font-family: 'Courier New', Courier, monospace;" >
+                        Abstract classes cannot be instantiated directly. They are meant to be extended by other classes that provide concrete implementations for the abstract methods. Attempting to create an instance of an abstract class will result in a compilation error. This ensures that the abstract class serves solely as a foundational template.
+                    </p>    
+                </div>
+                <div class="item item-4">
+                    <h2 style="font-size: 40px; color: aliceblue; font-family: 'Courier New', Courier, monospace;">
+                        Encapsulation and Abstraction
+                    </h2>
 
+                    <p style="font-size: 20px; color: aliceblue; font-family: 'Courier New', Courier, monospace;" >
+                        Abstract classes encapsulate common data and behaviors while abstracting out specific details that vary across subclasses. This aligns with the principles of object-oriented programming, promoting a cleaner and more understandable codebase.
+                    </p>    
+                </div>
+                <div class="item item-4">
+                    <h2 style="font-size: 40px; color: aliceblue; font-family: 'Courier New', Courier, monospace;">
+                        Code Example
+                    </h2>
+                    <img src="assets/abstractClasses.png" alt="abstractClasses">                
+                </div>
+            </div>
+        </section>
         <script src = "js/main.js"></script>
-        <p style="color: aqua;" href = "Hello Super Idol.html"> Super idol </p>
-        <a style="text-decoration: none" href = "Hello Super Idol.html"> I have no dreams </a>
     </body>
 </html>

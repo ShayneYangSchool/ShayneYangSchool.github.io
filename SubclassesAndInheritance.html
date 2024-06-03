@@ -39,9 +39,58 @@
                 </div>
             </div>
         </nav>
+        <section>
+            <div class="container-text">
+                <div class="item item-4">
+                    <h1 style="font-size: 50px; color: aliceblue; font-family: 'Courier New', Courier, monospace;">
+                        Subclasses and Inheritance
+                    </h1>
+                    <h2 style="font-size: 40px; color: aliceblue; font-family: 'Courier New', Courier, monospace;">
+                        Intro to Subclasses and Inheritance
+                    </h2>
+                    <p style="font-size: 20px; color: aliceblue; font-family: 'Courier New', Courier, monospace;" >
+                        Inheritance is a fundamental principle of object-oriented programming in Java that allows a class (subclass or derived class) to inherit fields and methods from another class (superclass or base class). This mechanism promotes code reuse and establishes a hierarchical relationship between classes, where a subclass extends the functionality of a superclass.
+                    </p>
+                </div>
+                <div class="item item-4">
+                    <h2 style="font-size: 40px; color: aliceblue; font-family: 'Courier New', Courier, monospace;">
+                        Defining Subclasses
+                    </h2>
+                    <img src="assets/subclassesAndInheritance.png" alt="stuff">
+                    <p style="font-size: 20px; color: aliceblue; font-family: 'Courier New', Courier, monospace;" >
+                        In Java, a subclass is created using the extends keyword. By extending a superclass, the subclass inherits its fields and methods, gaining all the non-private members of the superclass. This allows the subclass to reuse and build upon the existing functionality of the superclass.
+                    </p>
+                </div>
+                <div class="item item-4">
+                    <h2 style="font-size: 40px; color: aliceblue; font-family: 'Courier New', Courier, monospace;">
+                        Inheritance and Method Overriding
+                    </h2>
+                    <p style="font-size: 20px; color: aliceblue; font-family: 'Courier New', Courier, monospace;" >
+                        One of the key aspects of inheritance is method overriding. Method overriding allows a subclass to provide a specific implementation of a method that is already defined in its superclass. This enables polymorphism, where the same method can behave differently depending on the object that calls it.
+                        <br>
+                        When a method in a subclass has the same name, return type, and parameters as a method in its superclass, the subclass method overrides the superclass method. The @Override annotation is used to indicate that a method is overriding a superclass method, enhancing code readability and reducing errors.
+                    </p>    
+                </div>
+                <div class="item item-4">
+                    <h2 style="font-size: 40px; color: aliceblue; font-family: 'Courier New', Courier, monospace;">
+                        Access Control and Inheritance
+                    </h2>
 
+                    <p style="font-size: 20px; color: aliceblue; font-family: 'Courier New', Courier, monospace;" >
+                        The access modifiers (private, protected, and public) control the visibility of fields and methods to subclasses:
+                        <br>
+                        <br>
+                         - private members are not accessible in subclasses.
+                        <br>
+                         - protected members are accessible in subclasses and within the same package.
+                        <br>
+                         - public members are accessible from anywhere.
+                        <br>
+                         - Understanding these access levels is crucial for designing secure and maintainable class hierarchies.
+                    </p>    
+                </div>
+            </div>
+        </section>
         <script src = "js/main.js"></script>
-        <p style="color: aqua;" href = "Hello Super Idol.html"> Super idol </p>
-        <a style="text-decoration: none" href = "Hello Super Idol.html"> I have no dreams </a>
     </body>
 </html>

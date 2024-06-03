@@ -72,12 +72,22 @@
                 </div>
                 <div class="item item-4">
                     <h2 style="font-size: 40px; color: aliceblue; font-family: 'Courier New', Courier, monospace;">
-                        Binary Search
+                        Merge Sort
                     </h2>
-                    <img src="assets/binarySearch.png" alt="binary" height="500px">
+                    <img src="assets/mergeSort.png" alt="merge" height="800px">
 
                     <p style="font-size: 20px; color: aliceblue; font-family: 'Courier New', Courier, monospace;" >
-                        Another searching algorithm utilized by programmers is known as binary search. This sorting algorithm has a best case time of O(1) and an average and worst case time complexity of O(log n). Binary search works only on an already sorted array. The following explanation assumes that it is sorted from lowest to greatest. Binary search works by having two pointers that start out pointing to either ends of the array, the left and right pointer. It then checks the middle element between the two pointers. If the element is the target, we return the position. If the element is larger than the target, then we know that the target is left of the element. Thus, we would narrow down our pointers to be the left and the index of the middle - 1. On the other hand, if it was smaller, then we would narrow down our pointers to be the index of the middle + 1 and right. We would constantly do this until we found our target. If the right pointer, at any time, becomes smaller than the left pointer, then we must know that the target is not in the array. Binary search has the advantage that it is much faster than linear search. However, it also suffers from the drawback that the array must be sorted beforehand, or else it won't work. Below is an implementation for an integer array that returns the index.
+                        Another sorting algorithm is merge sort. This algorithm is more advanced than selection sort and performs much better on larger data sets. It is a divide and conquer sorting algorithm, meaning it breaks the array down into more manageable tasks. Given an array, it will perform the following steps until the array is declared to be sorted:
+                        <br><br>
+                         - If the array has a length of 1, it must be sorted and end the method
+                        <br>
+                         - If it isn't, find the middle and create two separate arrays by splitting down the middle (One array will include the middle element)
+                        <br>
+                         - Perform merge sort on the two arrays
+                        <br>
+                         - Once sorted, merge these two sorted arrays to create one big sorted array
+                        <br><br>
+                        Merge sort has a time complexity of O(n log n) as well as being a stable sort. The following implementation is recursive (Recursion is explained later in the recursion lesson)
                     </p>    
                 </div>
 
